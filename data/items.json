@@ -1,12 +1,36 @@
 [
-  {"id":1,"name":"Common Sword","description":"A basic sword.","image":"https://via.placeholder.com/100","rarity":"common"},
-  {"id":2,"name":"Common Shield","description":"A basic shield.","image":"https://via.placeholder.com/100","rarity":"common"},
-  {"id":3,"name":"Rare Helmet","description":"A sturdy helmet.","image":"https://via.placeholder.com/100","rarity":"rare"},
-  {"id":4,"name":"Rare Armor","description":"Strong armor.","image":"https://via.placeholder.com/100","rarity":"rare"},
-  {"id":5,"name":"Epic Staff","description":"A magical staff.","image":"https://via.placeholder.com/100","rarity":"epic"},
-  {"id":6,"name":"Epic Bow","description":"A bow of great power.","image":"https://via.placeholder.com/100","rarity":"epic"},
-  {"id":7,"name":"Legendary Dagger","description":"A legendary dagger.","image":"https://via.placeholder.com/100","rarity":"legendary"},
-  {"id":8,"name":"Legendary Armor","description":"Legendary armor.","image":"https://via.placeholder.com/100","rarity":"legendary"},
-  {"id":9,"name":"Ultra-Legendary Crown","description":"Ultimate crown.","image":"https://via.placeholder.com/100","rarity":"ultra-legendary"},
-  {"id":10,"name":"Ultra-Legendary Dragon","description":"A mythical dragon.","image":"https://via.placeholder.com/100","rarity":"ultra-legendary"}
+  {"id":1,"name":"Bronze Sword","description":"A cheap but reliable sword","image":"https://via.placeholder.com/100?text=1","rarity":"common","family":"Knight"},
+  {"id":2,"name":"Wooden Shield","description":"Light shield made of wood","image":"https://via.placeholder.com/100?text=2","rarity":"common","family":"Knight"},
+  {"id":3,"name":"Cloth Armor","description":"Simple armor","image":"https://via.placeholder.com/100?text=3","rarity":"common","family":"Knight"},
+  {"id":4,"name":"Apprentice Wand","description":"Wand for beginners","image":"https://via.placeholder.com/100?text=4","rarity":"common","family":"Wizard"},
+  {"id":5,"name":"Apprentice Robe","description":"Simple robe","image":"https://via.placeholder.com/100?text=5","rarity":"common","family":"Wizard"},
+  {"id":6,"name":"Training Bow","description":"Bow for training","image":"https://via.placeholder.com/100?text=6","rarity":"common","family":"Hunter"},
+  {"id":7,"name":"Leather Quiver","description":"Basic quiver","image":"https://via.placeholder.com/100?text=7","rarity":"common","family":"Hunter"},
+  {"id":8,"name":"Copper Dagger","description":"Small but handy dagger","image":"https://via.placeholder.com/100?text=8","rarity":"common","family":"Assassin"},
+  {"id":9,"name":"Traveler Boots","description":"Comfortable boots","image":"https://via.placeholder.com/100?text=9","rarity":"common","family":"Traveler"},
+  {"id":10,"name":"Rusty Helm","description":"Old helmet","image":"https://via.placeholder.com/100?text=10","rarity":"common","family":"Knight"},
+  {"id":11,"name":"Iron Sword","description":"Standard issue sword","image":"https://via.placeholder.com/100?text=11","rarity":"common","family":"Knight"},
+  {"id":12,"name":"Iron Shield","description":"Standard issue shield","image":"https://via.placeholder.com/100?text=12","rarity":"common","family":"Knight"},
+  {"id":13,"name":"Hunter Cap","description":"Cap for hunters","image":"https://via.placeholder.com/100?text=13","rarity":"common","family":"Hunter"},
+  {"id":14,"name":"Stone Ring","description":"Plain stone ring","image":"https://via.placeholder.com/100?text=14","rarity":"common","family":"Traveler"},
+  {"id":15,"name":"Herbal Potion","description":"Weak healing potion","image":"https://via.placeholder.com/100?text=15","rarity":"common","family":"Alchemist"},
+  {"id":16,"name":"Old Map","description":"Map to unknown places","image":"https://via.placeholder.com/100?text=16","rarity":"common","family":"Traveler"},
+  {"id":17,"name":"Rusty Gauntlet","description":"Gloves made of iron","image":"https://via.placeholder.com/100?text=17","rarity":"common","family":"Knight"},
+  {"id":18,"name":"Simple Amulet","description":"Amulet with small gem","image":"https://via.placeholder.com/100?text=18","rarity":"common","family":"Wizard"},
+
+  {"id":19,"name":"Steel Sword","description":"Better quality sword","image":"https://via.placeholder.com/100?text=19","rarity":"rare","family":"Knight"},
+  {"id":20,"name":"Steel Shield","description":"Better quality shield","image":"https://via.placeholder.com/100?text=20","rarity":"rare","family":"Knight"},
+  {"id":21,"name":"Hunter Bow","description":"Bow with good range","image":"https://via.placeholder.com/100?text=21","rarity":"rare","family":"Hunter"},
+  {"id":22,"name":"Mage Hat","description":"Pointy wizard hat","image":"https://via.placeholder.com/100?text=22","rarity":"rare","family":"Wizard"},
+  {"id":23,"name":"Silver Ring","description":"Ring with silver","image":"https://via.placeholder.com/100?text=23","rarity":"rare","family":"Traveler"},
+  {"id":24,"name":"Healing Potion","description":"Restores health","image":"https://via.placeholder.com/100?text=24","rarity":"rare","family":"Alchemist"},
+  {"id":25,"name":"Assassin Cloak","description":"Light cloak","image":"https://via.placeholder.com/100?text=25","rarity":"rare","family":"Assassin"},
+
+  {"id":26,"name":"Enchanted Sword","description":"Sword with magic","image":"https://via.placeholder.com/100?text=26","rarity":"epic","family":"Knight"},
+  {"id":27,"name":"Phoenix Feather","description":"Rare magical feather","image":"https://via.placeholder.com/100?text=27","rarity":"epic","family":"Wizard"},
+  {"id":28,"name":"Dragon Scale","description":"Tough dragon scale","image":"https://via.placeholder.com/100?text=28","rarity":"epic","family":"Dragon"},
+
+  {"id":29,"name":"Legendary Armor","description":"Armor of legends","image":"https://via.placeholder.com/100?text=29","rarity":"legendary","family":"Knight"},
+
+  {"id":30,"name":"Mythic Dragon","description":"Mythical dragon companion","image":"https://via.placeholder.com/100?text=30","rarity":"mythic","family":"Dragon"}
 ]

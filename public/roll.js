@@ -36,7 +36,7 @@ async function roll() {
   setTimeout(() => {
     clearInterval(animationInterval);
     showResult(item);
-    loadInventory();
+    addToInventory(item);
     if (['epic','legendary','ultra-legendary'].includes(item.rarity)) {
       playSound('rare-sound');
     }
@@ -44,16 +44,23 @@ async function roll() {
   }, 1500);
 }
 
-document.getElementById('roll-btn').addEventListener('click', roll);
+const rollBtn = document.getElementById('roll-btn');
+if (rollBtn) rollBtn.addEventListener('click', roll);
 
 function showResult(item) {
   const div = document.getElementById('result');
   div.innerHTML = `<div class="card ${item.rarity}"><img src="${item.image}"><p>${item.name}</p></div>`;
 }
 
+function addToInventory(item) {
+  const inv = JSON.parse(localStorage.getItem('inventory') || '[]');
+  inv.push({ ...item, obtainedAt: Date.now() });
+  localStorage.setItem('inventory', JSON.stringify(inv));
+  loadInventory();
+}
+
 async function loadInventory() {
-  const res = await fetch('/inventory');
-  let inv = await res.json();
+  let inv = JSON.parse(localStorage.getItem('inventory') || '[]');
   const sort = document.getElementById('sort-menu').value;
   if (sort === 'name') {
     inv.sort((a,b)=>a.name.localeCompare(b.name));
@@ -74,7 +81,8 @@ async function loadInventory() {
   updateStats(inv);
 }
 
-document.getElementById('sort-menu').addEventListener('change', loadInventory);
+const sortMenu = document.getElementById('sort-menu');
+if (sortMenu) sortMenu.addEventListener('change', loadInventory);
 
 function updateStats(inv) {
   const total = inv.length;
