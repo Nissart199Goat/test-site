@@ -3,17 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gacha Game</title>
+  <title>Mystic Relics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
-    <h1>Gacha Roll</h1>
-    <button id="roll-btn">Roll</button>
+  <header id="banner">
+    <h1>Mystic Relics</h1>
+  </header>
+  <main id="app">
+    <button id="roll-btn" class="neon-button">Roll</button>
+    <div id="animation-container"></div>
     <div id="result"></div>
+    <section id="stats"></section>
     <h2>Inventory</h2>
-    <div id="inventory" class="grid"></div>
-  </div>
+    <select id="sort-menu">
+      <option value="">Sort By</option>
+      <option value="name">Name</option>
+      <option value="rarity">Rarity</option>
+      <option value="date">Date</option>
+    </select>
+    <div id="inventory" class="inventory-grid"></div>
+  </main>
+  <audio id="roll-sound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" preload="auto"></audio>
+  <audio id="rare-sound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
