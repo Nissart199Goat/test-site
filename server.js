@@ -10,19 +10,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 const itemsPath = path.join(__dirname, 'data', 'items.json');
-const inventoryPath = path.join(__dirname, 'data', 'inventory.json');
+const inventoryPath = path.join(__dirname, 'data', 'inventory.json'); // legacy, not used
 
 function loadItems() {
   return JSON.parse(fs.readFileSync(itemsPath));
-}
-
-function loadInventory() {
-  if (!fs.existsSync(inventoryPath)) return [];
-  return JSON.parse(fs.readFileSync(inventoryPath));
-}
-
-function saveInventory(inv) {
-  fs.writeFileSync(inventoryPath, JSON.stringify(inv, null, 2));
 }
 
 const rarityWeights = {
@@ -51,15 +42,9 @@ app.get('/items', (req,res) => {
   res.json(loadItems());
 });
 
-app.get('/inventory', (req,res) => {
-  res.json(loadInventory());
-});
-
 app.post('/roll', (req,res) => {
   const item = rollItem();
-  const inv = loadInventory();
-  inv.push({ ...item, obtainedAt: Date.now() });
-  saveInventory(inv);
+  // inventory is managed on the client via localStorage
   res.json(item);
 });
 
