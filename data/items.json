@@ -1,0 +1,12 @@
+[
+  {"id":1,"name":"Common Sword","description":"A basic sword.","image":"https://via.placeholder.com/100","rarity":"common"},
+  {"id":2,"name":"Common Shield","description":"A basic shield.","image":"https://via.placeholder.com/100","rarity":"common"},
+  {"id":3,"name":"Rare Helmet","description":"A sturdy helmet.","image":"https://via.placeholder.com/100","rarity":"rare"},
+  {"id":4,"name":"Rare Armor","description":"Strong armor.","image":"https://via.placeholder.com/100","rarity":"rare"},
+  {"id":5,"name":"Epic Staff","description":"A magical staff.","image":"https://via.placeholder.com/100","rarity":"epic"},
+  {"id":6,"name":"Epic Bow","description":"A bow of great power.","image":"https://via.placeholder.com/100","rarity":"epic"},
+  {"id":7,"name":"Legendary Dagger","description":"A legendary dagger.","image":"https://via.placeholder.com/100","rarity":"legendary"},
+  {"id":8,"name":"Legendary Armor","description":"Legendary armor.","image":"https://via.placeholder.com/100","rarity":"legendary"},
+  {"id":9,"name":"Ultra-Legendary Crown","description":"Ultimate crown.","image":"https://via.placeholder.com/100","rarity":"ultra-legendary"},
+  {"id":10,"name":"Ultra-Legendary Dragon","description":"A mythical dragon.","image":"https://via.placeholder.com/100","rarity":"ultra-legendary"}
+]

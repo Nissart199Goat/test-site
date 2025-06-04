@@ -1,0 +1,10 @@
+[
+  {
+    "id": 4,
+    "name": "Rare Armor",
+    "description": "Strong armor.",
+    "image": "https://via.placeholder.com/100",
+    "rarity": "rare",
+    "obtainedAt": 1749073704276
+  }
+]
